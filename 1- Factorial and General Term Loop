@@ -1,0 +1,25 @@
+#include <cmath>
+#include <cmath>
+using namespace std;
+
+int main() {
+
+    int x,n,i;
+    float sum=0;
+    int fact=1;
+    cout<<"Enter x";
+    cin>>x;
+    cout<<"Enter n";
+    cin>>n;
+    if(n<1){
+        cout<<"Wrong";
+    }
+    else{
+    for(int i=1;i<=n;i++){
+        fact*=i;
+        sum=sum+(pow(x,i)/fact);
+    }
+    cout<<"Your sum is"<< sum;
+    }
+    return 0;
+}
