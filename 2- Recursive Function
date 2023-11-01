@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+#include<cmath>
+
+int x;
+    int add(int x){
+        if(x==0){
+            return 0;
+        }
+        return pow(2,x)+add(x-1);
+    }
+    int main(){
+        cout<<"Enter x";
+        cin>>x;
+        cout<< add(x);
+         return 0;
+    }
